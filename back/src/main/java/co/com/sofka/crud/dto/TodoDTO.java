@@ -3,9 +3,9 @@ package co.com.sofka.crud.dto;
 public class TodoDTO {
 
     private Long id;
-    private String name;
-    private boolean completed;
-    private String groupListId;
+    private String nameDTO;
+    private boolean completedDTO;
+    private String identifica;
 
     public Long getId() {
         return id;
@@ -15,27 +15,27 @@ public class TodoDTO {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNameDTO() {
+        return nameDTO;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNameDTO(String nameDTO) {
+        this.nameDTO = nameDTO;
     }
 
-    public boolean isCompleted() {
-        return completed;
+    public boolean isCompletedDTO() {
+        return completedDTO;
     }
 
-    public void setCompleted(boolean completed) {
-        this.completed = completed;
+    public void setCompletedDTO(boolean completedDTO) {
+        this.completedDTO = completedDTO;
     }
 
-    public String getGroupListId() {
-        return groupListId;
+    public String getIdentifica() {
+        return identifica;
     }
 
-    public void setGroupListId(String groupListId) {
-        this.groupListId = groupListId;
+    public void setIdentifica(String identifica) {
+        this.identifica = identifica;
     }
 }

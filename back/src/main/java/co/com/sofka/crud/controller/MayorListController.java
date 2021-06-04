@@ -24,19 +24,19 @@ public class MayorListController {
 
     @PutMapping(value = "api/mayorlist")
     public MayorList update(@RequestBody MayorList mayorList){
-        if(mayorList.getIdlist() != null){
+        if(mayorList.getId() != null){
             return serviceMayorList.save(mayorList);
         }
         throw new RuntimeException("No existe el id para actualziar");
     }
 
     @DeleteMapping(value = "api/{id}/mayorlist")
-    public void delete(@PathVariable("id")Long idList){
-        serviceMayorList.delete(idList);
+    public void delete(@PathVariable("id")Long id){
+        serviceMayorList.delete(id);
     }
 
     @GetMapping(value = "api/{id}/mayorlist")
-    public MayorList get(@PathVariable("id") Long idList){
-        return serviceMayorList.get(idList);
+    public MayorList get(@PathVariable("id") Long id){
+        return serviceMayorList.get(id);
     }
 }

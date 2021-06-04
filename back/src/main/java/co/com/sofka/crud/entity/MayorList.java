@@ -9,11 +9,11 @@ public class MayorList {
     @Id
     @GeneratedValue
 
-    private Long idlist;
+    private Long id;
     private String groupname;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "groupname")
+    @JoinColumn(name = "identity")
     //Se instancia la entidad
     private Set<Todo> todo;
 
@@ -21,12 +21,12 @@ public class MayorList {
         return todo;
     }
 
-    public Long getIdlist() {
-        return idlist;
+    public Long getId() {
+        return id;
     }
 
-    public void setIdlist(Long idlist) {
-        this.idlist = idlist;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getGroupname() {

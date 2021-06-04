@@ -18,12 +18,12 @@ public class MayorListService {
         return repositoryMayor.save(mayorList);
     }
 
-    public void delete(Long idlist){
-        repositoryMayor.delete(get(idlist));
+    public void delete(Long id){
+        repositoryMayor.delete(get(id));
     }
 
-    public MayorList get(Long idlist){
-        return repositoryMayor.findById(idlist).orElseThrow();
+    public MayorList get(Long id){
+        return repositoryMayor.findById(id).orElseThrow();
     }
 
 }

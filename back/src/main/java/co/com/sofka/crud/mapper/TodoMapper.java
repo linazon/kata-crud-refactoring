@@ -12,10 +12,9 @@ import org.mapstruct.Mappings;
 public interface TodoMapper {
 
     @Mappings({
-         @Mapping(source = "id", target = "id"),
-         @Mapping(source = "name", target = "name"),
-         @Mapping(source = "completed", target = "completed"),
-         @Mapping(source = "groupListId", target = "groupListId")
+         @Mapping(source = "name", target = "nameDTO"),
+         @Mapping(source = "completed", target = "completedDTO"),
+         @Mapping(source = "identity", target = "identifica")
     })
     TodoDTO toTodoDTO (Todo todo);
     Iterable<TodoDTO> toTodoDTOs (Iterable<Todo> todos);
