@@ -30,6 +30,11 @@
       const todoUp = state.todo.list;
       todoUp.push(action.item);
       return { ...state, todo: { list: todoUp, item: {} } };
+    case 'add-mayor-list' :
+      const mayorListUp = state.mayorlist.list;
+      mayorListUp.push(action.item);
+      return {...state, mayorlist: { list: mayorListUp, item: {}}}
+       
     default:
       return state;
   }

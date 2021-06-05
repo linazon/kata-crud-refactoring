@@ -3,7 +3,8 @@ import reducer from '../utilities/reducer';
 
 
 const initialState = {
-    todo: { list: [], item: {} }
+    todo: { list: [], item: {} },
+    mayorlist: {list: [], item: {} }
 };
 
 
